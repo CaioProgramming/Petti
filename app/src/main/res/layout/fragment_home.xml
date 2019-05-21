@@ -33,7 +33,7 @@
                     android:padding="2dp"
                     style="@style/TextAppearance.AppCompat.Title"
                     android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textStyle="bold"
                     android:text="address"
                     android:layout_width="wrap_content"
