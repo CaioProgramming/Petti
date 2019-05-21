@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".StoreActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/app_bar"
+            android:layout_alignTop="@+id/app_bar"
+            android:fitsSystemWindows="true"
+            android:background="@color/md_white_1000"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="182dp"
+        android:layout_height="109dp"
+        android:layout_above="@+id/lbl_destaques"
+        android:layout_alignEnd="@+id/app_bar"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="-16dp"
+        android:backgroundTint="@color/md_yellow_600"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_favorite_border_white_24dp" />
+
+    <TextView
+        android:id="@+id/lbl_destaques"
+        android:layout_below="@id/app_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_destaques"
+        android:textSize="18sp"
+        android:layout_margin="2dp"
+        style="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/lbl_destaques"
+        android:id="@+id/recycler_destaques"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recycler_destaques_height"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/lbl_produtos"
+        android:layout_below="@id/recycler_destaques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_produtos"
+        android:layout_margin="2dp"
+        android:textSize="18sp"
+        style="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/lbl_produtos"
+        android:id="@+id/recycler_produtos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
