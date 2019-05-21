@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "779384786432",
+    "firebase_url": "https://petti-brasil.firebaseio.com",
+    "project_id": "petti-brasil",
+    "storage_bucket": "petti-brasil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779384786432:android:00708681991ca013",
+        "android_client_info": {
+          "package_name": "com.silentsystems.petti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779384786432-9hoclg8gi088kdkkelvfgfvma1kagc9v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.silentsystems.petti",
+            "certificate_hash": "27f9c3e4d6329afb5ec5c475f97e4c1a6fe0f664"
+          }
+        },
+        {
+          "client_id": "779384786432-32jghvhq59mn3jga003ksrd40bu4sn64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc98yYbPpSld6XIUh-IpzrmgcKlkhiATs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779384786432-32jghvhq59mn3jga003ksrd40bu4sn64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
